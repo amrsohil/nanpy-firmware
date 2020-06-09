@@ -3,71 +3,17 @@
 // external libraries should be put inside #if ... #endif
 //    internal headers not.
 
-#if USE_MCP41xxx
-#include <MCP41xxx.h>
-#endif
 
 #if USE_EEPROM
 #include <EEPROM.h>
 #endif
 
-#if USE_Servo
-#include <Servo.h>
-#endif
-
-#if USE_LiquidCrystal
-#include <LiquidCrystal.h>
-#endif
-
-#if USE_LiquidCrystal_I2C
-#include <LiquidCrystal_I2C.h>
-#endif
-
-#if USE_Stepper
-#include <Stepper.h>
-#endif
-
-#if USE_OneWire
-#include <OneWire.h>
-#endif
-
-#if USE_DallasTemperature
-#include <DallasTemperature.h>
-#endif
-
-#if USE_CapacitiveSensor
-#include <CapacitiveSensor.h>
-#endif
-
-#if USE_DHT
-#include <DHT.h>
-#endif
-
-#if USE_Wire
-#include <Wire.h>
-#endif
-
-#if USE_TLC5947
-#include <Adafruit_TLC5947.h>
-#endif
-
-
-#include "MCP41xxxClass.h"
 #include "BaseClass.h"
 #include "ArduinoClass.h"
-#include "OneWireClass.h"
-#include "StepperClass.h"
-#include "ServoClass.h"
-#include "DallasTemperatureClass.h"
-#include "LiquidCrystalClass.h"
-#include "LiquidCrystalClass_I2C.h"
-#include "CapacitiveSensorClass.h"
-#include "ToneClass.h"
 #include "MethodDescriptor.h"
 #include "ComChannel.h"
 #include "EEPROMClass.h"
 #include "RAMClass.h"
-#include "DHTClass.h"
 
 #include "DefineClass.h"
 #include "ArduinoCoreClass.h"
@@ -77,10 +23,7 @@
 #include "InfoClass.h"
 #include "WireClass.h"
 
-#include "TLC5947Class.h"
-#include "EspClass.h"
 #include "UltrasonicClass.h"
-#include "ColorSensorClass.h"
 
 using namespace nanpy;
 
